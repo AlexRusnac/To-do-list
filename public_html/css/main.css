@@ -9,35 +9,41 @@
 }
 
 .logo {
-    position: relative;
+    
     vertical-align: middle;
     padding-left: 20px;
     padding-right: 30px;
 }
 
 .main-menu  ul{
+    display: inline-block;
     margin: 0;
     margin-left: 60px;
     padding: 0;
     list-style: none;
+    vertical-align: middle;
     
 }
 
 .main-menu li {
-    display: inline-block;
+    
     text-decoration: none;
     vertical-align: middle;
     
 }
 
-div [id="user"] {
+.user-id {
     vertical-align: middle;
-    
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 75px;
         
 }
 .col-fixed {
     /* custom width */
-    width:420px;
+    width:450px;
+    height: 280px;
+    margin: 10px;
      
 }
 
@@ -73,6 +79,7 @@ div [id="user"] {
     font-size:12px;
     letter-spacing:1px;
     color:#747474;
+    background: #fff;
 }
 
 /* centering styles for jsbin */
@@ -81,13 +88,8 @@ body {
     width:100%;
     height:100%;
 }
-html {
-    display:table;
-}
-body {
-    display:table-cell;
-    vertical-align:middle;
-}
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
