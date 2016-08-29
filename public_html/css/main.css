@@ -1,24 +1,22 @@
 
 
  .header {
-    margin: 0px;
-    margin-top: 0;
-    padding: 0px;
-    height: 150px;
+    
+    height: 100px;
     background: #ff0;
 }
 
 .logo {
-    
-    vertical-align: middle;
-    padding-left: 20px;
-    padding-right: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    margin: 0;
 }
 
 .main-menu  ul{
     display: inline-block;
     margin: 0;
-    margin-left: 60px;
+    
     padding: 0;
     list-style: none;
     vertical-align: middle;
@@ -26,35 +24,39 @@
 }
 
 .main-menu li {
-    
+    margin-left: 150px;
+    margin-top: 75px;
     text-decoration: none;
     vertical-align: middle;
     
 }
 
 .user-id {
-    vertical-align: middle;
-    text-align: right;
-    margin-right: 20px;
-    margin-bottom: 75px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+   
+    
         
 }
 .col-fixed {
     /* custom width */
-    width:450px;
+    
     height: 280px;
-    margin: 10px;
+    
+    
      
 }
 
-[class*="col-"] {
+/*[class*="col-"] {
     padding-top:10px;
     padding-bottom:15px;
 	border:1px solid #80aa00;
 	background:#d6ec94;
 }
 [class*="col-"]:before {
-    display:block;position:relative;
+    display:block;
+    position:relative;
     content:"COLUMN";
     margin-bottom:8px;
 	font-family:sans-serif;
@@ -62,7 +64,7 @@
     letter-spacing:1px;
     color:#658600;
     text-align:left;
-}
+}*/
 
 /* content styles */
 .item {
@@ -72,14 +74,16 @@
 	display:table-cell;
 	vertical-align:middle;
 	text-align:center;
+        
 }
 .content:before {
-    content:"Content";
+    content:"Contenccccccct";
     font-family:sans-serif;
     font-size:12px;
     letter-spacing:1px;
     color:#747474;
     background: #fff;
+    
 }
 
 /* centering styles for jsbin */
