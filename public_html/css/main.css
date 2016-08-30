@@ -66,6 +66,8 @@ main:before,
 main:after{
     content: "";
     display: table;
+    
+    
 }
 main:after {
      clear: both;
@@ -77,7 +79,8 @@ main:after {
 
 .col-fixed {
     display: table-cell;
-    text-align: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
     width: 450px;
     height: 280px;
     position: relative;
@@ -85,31 +88,66 @@ main:after {
     padding-right: 15px;
     padding-left: 15px;
     float: left;
-    border: 1px solid #269abc;
+    
+    
+}
+
+.main-table {
+    display: flex;
+    flex-direction: column;
+    content: "";
+    margin-top: 50px;
+    margin-left: 16%;
+    width: 99%;
+ /*   margin-left: auto;
+    margin-right: auto;*/
 }
 
 
+.main-table h2 {
+    
+    font-family: "Signika";
+    font-size: 18px;
+    text-transform: none;
+    font-weight: bold;
+    margin: 0px -15px -10px -15px;
+    padding: 5px;
+    color: white;
+}
+
+#list1 {
+    border: 1px solid #9c6;
+}
+
+#list1 h2 {
+    background-color: #9c6;
+}
+
+#list2 {
+    border: 1px solid #3cf;
+}
+
+#list2 h2 {
+    background-color: #3cf;
+}
+#list3 {
+    border: 1px solid #f93;
+}
+
+#list3 h2 {
+    background-color: #f93;
+}
+#list4 {
+    border: 1px solid #f63;
+}
+
+#list4 h2 {
+    background-color: #f63;
+}
 
 
 /* content styles */
-.item {
-	display:table;
-}
-.content {
-	display:table-cell;
-	vertical-align:middle;
-	text-align:center;
-        
-}
-.content:before {
-    content:"Contenccccccct";
-    font-family:sans-serif;
-    font-size:12px;
-    letter-spacing:1px;
-    color:#747474;
-    background: #fff;
-    
-}
+
 
 /* centering styles for jsbin */
 html,
@@ -119,23 +157,6 @@ body {
     font: 22px "Roboto","Arial",sans-serif;
 }
 
-/*[class*="col-"] {
-    padding-top:10px;
-    padding-bottom:15px;
-	border:1px solid #80aa00;
-	background:#d6ec94;
-}
-[class*="col-"]:before {
-    display:block;
-    position:relative;
-    content:"COLUMN";
-    margin-bottom:8px;
-	font-family:sans-serif;
-	font-size:10px;
-    letter-spacing:1px;
-    color:#658600;
-    text-align:left;
-}*/
 
 
 
