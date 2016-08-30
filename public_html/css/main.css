@@ -6,7 +6,8 @@
     z-index: 5;
     padding: 20px;
     color: #555;
-    height: 100px;    
+    height: 100px; 
+    width: 100%;
     border-bottom: 1px solid #eee;
 }
 
@@ -98,7 +99,7 @@ main:after {
     content: "";
     margin-top: 50px;
     margin-left: 16%;
-    width: 99%;
+    width: 100%;
  /*   margin-left: auto;
     margin-right: auto;*/
 }
@@ -110,13 +111,14 @@ main:after {
     font-size: 18px;
     text-transform: none;
     font-weight: bold;
-    margin: 0px -15px -10px -15px;
+    margin: 0px -15px 0px -15px;
     padding: 5px;
     color: white;
 }
 
 #list1 {
     border: 1px solid #9c6;
+    box-shadow: 1px 1px 2px 1px #eee;
 }
 
 #list1 h2 {
@@ -125,6 +127,7 @@ main:after {
 
 #list2 {
     border: 1px solid #3cf;
+    box-shadow: 1px 1px 2px 1px #eee;
 }
 
 #list2 h2 {
@@ -132,6 +135,7 @@ main:after {
 }
 #list3 {
     border: 1px solid #f93;
+    box-shadow: 1px 1px 2px 1px #eee;
 }
 
 #list3 h2 {
@@ -139,10 +143,22 @@ main:after {
 }
 #list4 {
     border: 1px solid #f63;
+    box-shadow: 1px 1px 2px 1px #eee;
 }
 
 #list4 h2 {
     background-color: #f63;
+}
+
+.main-table ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
 }
 
 
