@@ -9,6 +9,7 @@
     height: 100px; 
     width: 100%;
     border-bottom: 1px solid #eee;
+    
 }
 
 .logo {
@@ -159,9 +160,75 @@ main:after {
     font-size: 100%;
     line-height: 1;
     font-family: inherit;
+    list-style: none;
+    
 }
 
+.main-table li {
+    border-bottom: 1px dashed #ccc;
+    padding: 10px 0;
+    
+}
+.todo {
+    font-size: 16px;
+    font-family: "Signika";
+}
 
+.todo img .move {
+    float: left;
+    margin-right: 20px;
+    cursor: move;  
+}
+
+ .todo a img {
+    float: right;
+    vertical-align: top;
+}
+
+input #todo_text {
+    width: 300px;
+    margin-right: -100px;
+    vertical-align: baseline;
+}
+
+.add {
+    float: right;
+    margin-right: -5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    background: #bbb;
+    color: #fff;
+    width: 80px;
+    cursor: pointer;
+}
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font: 16px "Signika";
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+}
+
+input[type="submit"] {
+        white-space: pre;
+        align-items: flex-start;
+        text-align: center;
+        box-sizing: border-box;
+        
+}
+
+.new_todo {
+    border-bottom: 1px dashed #ccc;
+}
 /* content styles */
 
 

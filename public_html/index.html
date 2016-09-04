@@ -52,14 +52,27 @@
     <div class="first">
         <div  class="col-fixed" id="list1">
             <h2>➀ Do First</h2>
-            <ul class="todolist">
-                <li>---</li>
+            <ul class="todolist connectedSortable ui-sortable" data-update-url="" id="todo001">
+                <li class="todo">
+                    <img class="move" src="img/menu-icon.png" width="8px" height="16px" alt="move">
+                    <a><img src="img/images.png" width="16px" height="16px" alt="Delete"></a>
+                    <span>aaaa</span>
+                </li>
+                <li>
+                    <form accept-charset="UTF-8" id="new_todo">
+                    <div style=" margin:0; pading:0; display: inline;">
+                        
+                    </div>
+                <input id="todo_text" name="todo[text]" type="text">
+                <input class="add" id="add" name="commit" type="submit" value="Add task ↲">
+                    </form>
+                </li>
             </ul>
         </div>  
         <div class="col-fixed" id="list2">
             <h2>➁ Schedule</h2>
-            <ul>
-                <li>---</li>
+            <ul class="todolist connectedSortable ui-sortable"  id="schedule001">
+                <li class="todo">aaa</li>
             </ul>
             
         </div>
@@ -67,14 +80,14 @@
     <div class="second">   
         <div class=" col-fixed" id="list3">
            <h2>➂ Delegate</h2>
-            <ul>
-                <li>---</li>
+            <ul class="todolist connectedSortable ui-sortable"  id="delegate001">
+                <li class="todo">---</li>
             </ul>
         </div>
         <div class=" col-fixed" id="list4">
             <h2>➃ Don't do</h2>
-            <ul>
-                <li>---</li>
+            <ul class="todolist connectedSortable ui-sortable"  id="dontdo001">
+                <li class="todo">---</li>
             </ul>
         </div>
         
@@ -86,10 +99,13 @@
       <footer class="footer">
         <p>&copy; Company 2015</p>
       </footer>
-     <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+     <!-- /container -->        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
+        
+        <!--<script>$("#sortable").sortable();</script>-->
 
         <script src="js/main.js"></script>
 
