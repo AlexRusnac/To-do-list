@@ -208,14 +208,8 @@ input {
     border: none;
     outline: none;
     font: 16px "Signika";
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
     display: inline-block;
-    text-align: start;
+    width: 330px;
 }
 
 input[type="submit"] {
@@ -224,6 +218,9 @@ input[type="submit"] {
         text-align: center;
         box-sizing: border-box;
         
+}
+.todolist {
+    max-height: 280px;
 }
 
 .new_todo {
