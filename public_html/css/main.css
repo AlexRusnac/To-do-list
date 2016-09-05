@@ -90,6 +90,7 @@ main:after {
     padding-right: 15px;
     padding-left: 15px;
     float: left;
+    overflow: auto;
     
     
 }
@@ -162,6 +163,7 @@ main:after {
     font-family: inherit;
     list-style: none;
     
+    
 }
 
 .main-table li {
@@ -186,9 +188,9 @@ main:after {
 }
 
 input #todo_text {
-    width: 300px;
     margin-right: -100px;
     vertical-align: baseline;
+    
 }
 
 .add {
@@ -209,7 +211,8 @@ input {
     outline: none;
     font: 16px "Signika";
     display: inline-block;
-    width: 330px;
+    width: 320px;
+    word-wrap: break-word;
 }
 
 input[type="submit"] {
@@ -218,6 +221,10 @@ input[type="submit"] {
         text-align: center;
         box-sizing: border-box;
         
+}
+
+input[type="text"]{
+    word-wrap: break-word;
 }
 .todolist {
     max-height: 280px;
