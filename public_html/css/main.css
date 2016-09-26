@@ -39,7 +39,8 @@
     margin: 0;
     border: 0;
     font-size: 100%;
-    line-height: 1;
+    line-height: inherit;
+    font-weight: inherit;
     font-family: inherit;
     display: inline;
     float: left;
@@ -47,7 +48,8 @@
 }
 
 
-.main-menu li a:visited, .main-menu li a:link{
+.main-menu li a:visited,
+.main-menu li a:link{
         color: #555;
 }
 
@@ -64,6 +66,13 @@
     color: #999;
 }
 
+.main-menu .active{
+    font-weight: bold;
+}
+
+
+/*main*/ 
+
 main:before,
 main:after{
     content: "";
@@ -76,17 +85,16 @@ main:after {
 }
 
 
+
 /*table stile*/
 
 
 .main-table {
     display: flex;
     flex-direction: column;
-    
     align-content: space-around;
     content: "";
     margin-top: 50px;
-    
     width: 100%;
 }
 
