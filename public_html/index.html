@@ -43,8 +43,8 @@ and open the template in the editor.
         
         <main class="main-table">
             <div class="reg_col">
-                <h3>Sign in</h3> 
-            </div> 
+                <div>  <h3>Sign in</h3></div> 
+             
             <form accept-charset="UTF-8" action="/user/sign-in" class="new_user" id="new_user" method="post">
             <div>
                   <label for="user_email"> E-mail</label>
@@ -63,12 +63,21 @@ and open the template in the editor.
             <div>
                 <input class="bigbtn" name="commit" type="submit" value="Sign in">
             </div>    
-            </form>    
+            </form> 
+            <p>
+                Not yet a user? 
+                <a herf="/user/sign_up" class="btn">Sign up</a>
+                <br>
+                <small>
+                    <a href="/user/password/new">Forgot your password?</a>
+                </small>
+                  
+            </p>
                
           
             
             
-            
+         </div>   
         </main>
         
         

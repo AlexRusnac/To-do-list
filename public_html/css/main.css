@@ -96,6 +96,7 @@ main:after {
     content: "";
     margin-top: 50px;
     width: 100%;
+    border-bottom: 1px solid #eee;
 }
 
 .col-fixed {
@@ -112,13 +113,7 @@ main:after {
     float: left;
     overflow: auto;
 /*  table-layout: auto;*/
-    
-    
-    
 }
-
-
-
 
 .main-table h2 {
     
@@ -130,8 +125,6 @@ main:after {
     padding: 5px;
     color: white;
 }
-
-
 
 #list1 {
     border: 1px solid #9c6;
@@ -220,6 +213,7 @@ input #todo_text {
     width: 80px;
     cursor: pointer;
 }
+
 input {
     margin: 0;
     padding: 0;
@@ -231,6 +225,7 @@ input {
     word-wrap: break-word;
     
 }
+
 input[type="text"]{
     width: 320px;
 }
@@ -240,14 +235,10 @@ input[type="submit"] {
         align-items: flex-start;
         text-align: center;
         box-sizing: border-box;
-        
 }
 
-
 input[type="text"]{
-    word-wrap: break-word;
-    
-    
+    word-wrap: break-word;   
 }
 .todolist {
     min-height: 280px;
@@ -287,9 +278,10 @@ input[type="text"]{
 }
 
 .reg_col {
-    display: flex;
+    margin-left: 20px; 
     width: 280px;
     height: 100%;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -312,13 +304,11 @@ label {
     font-size: 100%;
     line-height: 1;
     font-family: inherit;
-    
 }
 
 input[type="email"],
 input[type="password"],
 input[type="checkbox"]{
-    
     margin: 0 0 20px 0;
     background: #fff;
     font: 16px "Roboto","Helvetica Neue",sans-serif;
@@ -335,10 +325,31 @@ input[type="checkbox"]{
     border: 1px solid #48ccae;
     line-height: 1;
     background: linear-gradient(to bottom, #50e3c2 0%, #48ccae 100%);
-    
-    
 }
 
+.btn {
+    margin-bottom: 0;
+    padding: 4px 10px;
+    background: linear-gradient(to bottom, #50e3c2 0%, #48ccae 100%);
+    border: 1px solid #48ccae;
+    border-radius: 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #48ccae;
+    font: bold 12px "Arvo",helvetica,arial,sans-serif;
+    text-decoration: none !important;
+    line-height: 1;
+}
+
+small {
+    font-size: 14px;
+}
+
+a, a:hover, a:active, a:visited{
+    color: #555;
+    text-decoration: none;
+}
 
 html,
 body {
