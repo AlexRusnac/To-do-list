@@ -9,49 +9,77 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+         
+         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.css">
-        
-        
+        <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css">
+        <link rel="stylesheet" href="css/main.css">
+
        
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
        
         <script src="js/vendor/jquery-2.2.4.min.js"></script>
         <script src="js/vendor/jquery-ui.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        
+        <script src="js/reguser.js"></script>
     </head>
     <body>
-        <header class="header">
+      <header class="header">
                
-                <div class="logo active">
+                <div class="logo">
                     <img  src="img/logo.png" width="50" height="50px" alt="logo">
                 </div>
                 <section class="main-menu">
                  <ul>
-                     <li><a href="todos">To dos</a></li>
+                    <li class="active">To dos</li>
                     <!--<li>About</li>-->
                  </ul>
                 </section>
-
+                
             
         </header>
         
         <main class="main-table">
+            <div class="reg_col">
+                <h3>Sign in</h3> 
+            </div> 
+            <form accept-charset="UTF-8" action="/user/sign-in" class="new_user" id="new_user" method="post">
+            <div>
+                  <label for="user_email"> E-mail</label>
+                  <br>
+                  <input id="user_email" name="user[email]" size="30px" type="email" value>
+            </div>
+            <div>
+                <label for="user_password"> Password</label>
+                <br>
+                <input id="user_password" name="user[password]" size="30px" type="password">
+            </div>
+            <div>
+                <input id="remember_me" name="user[user_remember_me]" type="checkbox" checked="checked" value="1">
+                <label for="remember_me"> Remember me</label>
+            </div>
+            <div>
+                <input class="bigbtn" name="commit" type="submit" value="Sign in">
+            </div>    
+            </form>    
+               
+          
             
             
             
-            
-        </main> 
+        </main>
+        
+        
+        
+        
         
         <footer class="footer">
         <p>&copy; Company 2015</p>
         </footer>
         
-        <div>TODO write content</div>
+        
+        
     </body>
 </html>
